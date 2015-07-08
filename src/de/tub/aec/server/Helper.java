@@ -106,7 +106,7 @@ public class Helper {
 		
 		DocumentBuilder builder = null;
 		builder = builderFactory.newDocumentBuilder();
-		Document xmlDoc = builder.parse(new File("src/main/resources/ReplicationPathConfiguration.xml"));
+		Document xmlDoc = builder.parse(new File("resources/ReplicationPathConfiguration.xml"));
 		
 		/** Get all <path> elements */
 		NodeList list = xmlDoc.getElementsByTagName("path");

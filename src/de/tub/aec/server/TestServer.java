@@ -18,7 +18,7 @@ public class TestServer {
 			String[] split = line.split(" ");
 			
 			@SuppressWarnings("unused")
-			Server server = new Server(split[0],split[1], Integer.parseInt(split[2]), 2, 2);
+			Server server = new Server(split[0], Integer.parseInt(split[1]), 2, 2);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

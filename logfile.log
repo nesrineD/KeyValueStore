@@ -842,3 +842,57 @@ DEBUG main org.apache.log4j.Logger - ID: nodeD Host: 54.169.107.229 Port: 5000
 DEBUG main org.apache.log4j.Logger - ID: nodeA Host: 52.18.103.8 Port: 2000
 DEBUG main org.apache.log4j.Logger - ID: nodeB Host: 54.210.67.217 Port: 3000
 DEBUG main org.apache.log4j.Logger - ID: nodeC Host: 52.10.128.10 Port: 4000
+DEBUG main org.apache.log4j.Logger - ID: nodeA Host: 52.18.103.8 Port: 2000
+DEBUG main org.apache.log4j.Logger - ID: nodeB Host: 54.210.67.217 Port: 3000
+DEBUG main org.apache.log4j.Logger - ID: nodeC Host: 52.10.128.10 Port: 4000
+DEBUG main org.apache.log4j.Logger - ID: nodeD Host: 54.169.107.229 Port: 5000
+DEBUG main org.apache.log4j.Logger - ID: nodeA Host: 52.18.103.8 Port: 2000
+DEBUG main org.apache.log4j.Logger - ID: nodeB Host: 54.210.67.217 Port: 3000
+DEBUG main org.apache.log4j.Logger - ID: nodeC Host: 52.10.128.10 Port: 4000
+DEBUG main org.apache.log4j.Logger - ID: nodeD Host: 54.169.107.229 Port: 5000
+DEBUG main org.apache.log4j.Logger - ID: nodeA Host: localhost Port: 2000
+DEBUG main org.apache.log4j.Logger - ID: nodeB Host: localhost Port: 3000
+DEBUG main org.apache.log4j.Logger - ID: nodeC Host: localhost Port: 4000
+DEBUG main org.apache.log4j.Logger - ID: nodeD Host: localhost Port: 5000
+DEBUG main org.apache.log4j.Logger - ID: nodeA Host: localhost Port: 2000
+DEBUG main org.apache.log4j.Logger - ID: nodeB Host: localhost Port: 3000
+DEBUG main org.apache.log4j.Logger - ID: nodeC Host: localhost Port: 4000
+DEBUG main org.apache.log4j.Logger - ID: nodeA Host: 52.18.103.8 Port: 2000
+DEBUG main org.apache.log4j.Logger - ID: nodeB Host: 54.210.67.217 Port: 3000
+DEBUG main org.apache.log4j.Logger - ID: nodeC Host: 52.10.128.10 Port: 4000
+DEBUG main org.apache.log4j.Logger - ID: nodeD Host: 54.169.107.229 Port: 5000
+DEBUG main org.apache.log4j.Logger - ID: nodeA Host: 52.18.103.8 Port: 2000
+DEBUG main org.apache.log4j.Logger - ID: nodeB Host: 54.210.67.217 Port: 3000
+DEBUG main org.apache.log4j.Logger - ID: nodeC Host: 52.10.128.10 Port: 4000
+DEBUG main org.apache.log4j.Logger - ID: nodeD Host: 54.169.107.229 Port: 5000
+DEBUG main org.apache.log4j.Logger - Path Element #0 - StartPath: nodeA
+DEBUG main org.apache.log4j.Logger - Link Element #0 - Source: nodeA
+DEBUG main org.apache.log4j.Logger - Type: sync for Link Element #0 and StartPath nodeA -> Target: nodeB
+DEBUG main org.apache.log4j.Logger - Link Element #1 - Source: nodeB
+DEBUG main org.apache.log4j.Logger - Link Element #2 - Source: nodeC
+DEBUG main org.apache.log4j.Logger - Sync: Adding to set
+DEBUG main org.apache.log4j.Logger - Adding to Map
+INFO main org.apache.log4j.Logger - ----------------------
+INFO main edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Registered handler of type CreateHandler for target create
+INFO main edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Registered handler of type ReadHandler for target read
+INFO main edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Registered handler of type UpdateHandler for target update
+INFO main edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Registered handler of type DeleteHandler for target delete
+INFO main edu.kit.aifb.dbe.hermes.Receiver - Receiver created at port 2000
+INFO Thread-1 edu.kit.aifb.dbe.hermes.Receiver - Receiver is now running.
+INFO Thread-1 edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Known handlers:
+	ReadHandler(target: read)
+	CreateHandler(target: create)
+	UpdateHandler(target: update)
+	DeleteHandler(target: delete)
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - ThreadScaleManager is now running.
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Started 3 RequestHandlerThreads.
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Started 3 NetworkIOHandlerThreads.
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread

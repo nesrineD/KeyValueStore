@@ -29,10 +29,7 @@ public class Server {
 	 */
 	private String id;
 	
-	/**
-	 * IP address of the server node.
-	 */
-	private String ipAddress;
+	
 
 	/**
 	 * Stores the replication strategies for each node.
@@ -60,7 +57,7 @@ public class Server {
 	 * @throws SAXException
 	 * @throws ParserConfigurationException
 	 */
-	public Server(String id, String ip, int port, int acceptThreads, int processThreads)
+	public Server(String id, int port, int acceptThreads, int processThreads)
 			throws IOException, ParserConfigurationException, SAXException {
 
 		PropertyConfigurator.configure("log4j.properties");
@@ -68,7 +65,7 @@ public class Server {
 		reg = RequestHandlerRegistry.getInstance();
 		this.id = id;
 		
-        this.ipAddress=ip;
+        
 		senders = Helper.parseMapping();
 		replicationTargets = Helper.getReplicationTargets(this.id);
 
