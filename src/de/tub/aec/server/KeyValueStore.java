@@ -113,7 +113,7 @@ public class KeyValueStore {
 				writeTime = System.currentTimeMillis();
 				logger.info("the write time is" + writeTime);
 				// send the time of the write to the client
-				Request req = new Request("writeTime", "nodeD");
+				Request req = new Request("writeTime", "nodeC");
 				req.addItem(writeTime);
 				Response resp = sendMessage("89.15.238.100", 6000, req);
 				logger.info("the response is to D" + resp + "message sent");
