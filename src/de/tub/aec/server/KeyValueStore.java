@@ -110,13 +110,13 @@ public class KeyValueStore {
 		if (store.containsKey(key)) {
 			if (!store.get(key).equals(value)) {
 				store.replace(key, value);
-				writeTime = System.currentTimeMillis();
-				logger.info("the write time is" + writeTime);
+			//	writeTime = System.currentTimeMillis();
+			//	logger.info("the write time is" + writeTime);
 				// send the time of the write to the client
-				Request req = new Request("writeTime", "nodeD");
-				req.addItem(writeTime);
-				Response resp = sendMessage("89.204.135.19", 6000, req);
-				logger.info("the response is to D" + resp + "message sent");
+			//	Request req = new Request("writeTime", "nodeD");
+			//	req.addItem(writeTime);
+			//	Response resp = sendMessage("89.204.135.19", 6000, req);
+			//	logger.info("the response is to D" + resp + "message sent");
 				
 			} else {
 				throw new SameValueException("Value has not changed.");
