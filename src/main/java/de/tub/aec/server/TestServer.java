@@ -1,4 +1,4 @@
-package de.tuberlin.ise.aec.group3;
+package de.tub.aec.server;
 
 import java.io.BufferedReader;
 import java.io.IOException;

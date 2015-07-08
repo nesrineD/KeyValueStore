@@ -1,4 +1,4 @@
-package de.tuberlin.ise.aec.group3.exceptions;
+package de.tub.aec.server.exceptions;
 
 public class KeyNotFoundException extends Exception {
 

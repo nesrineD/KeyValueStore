@@ -1,7 +1,7 @@
-package de.tuberlin.ise.aec.group3.handlers;
+package de.tub.aec.server.handler;
 
-import de.tuberlin.ise.aec.group3.KeyValueStore;
-import de.tuberlin.ise.aec.group3.exceptions.KeyNotFoundException;
+import de.tub.aec.server.KeyValueStore;
+import de.tub.aec.server.exceptions.KeyNotFoundException;
 import edu.kit.aifb.dbe.hermes.IRequestHandler;
 import edu.kit.aifb.dbe.hermes.Request;
 import edu.kit.aifb.dbe.hermes.Response;

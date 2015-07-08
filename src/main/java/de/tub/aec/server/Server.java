@@ -1,4 +1,4 @@
-package de.tuberlin.ise.aec.group3;
+package de.tub.aec.server;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -9,10 +9,10 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.apache.log4j.PropertyConfigurator;
 import org.xml.sax.SAXException;
 
-import de.tuberlin.ise.aec.group3.handlers.CreateHandler;
-import de.tuberlin.ise.aec.group3.handlers.DeleteHandler;
-import de.tuberlin.ise.aec.group3.handlers.ReadHandler;
-import de.tuberlin.ise.aec.group3.handlers.UpdateHandler;
+import de.tub.aec.server.handler.CreateHandler;
+import de.tub.aec.server.handler.DeleteHandler;
+import de.tub.aec.server.handler.ReadHandler;
+import de.tub.aec.server.handler.UpdateHandler;
 import edu.kit.aifb.dbe.hermes.Receiver;
 import edu.kit.aifb.dbe.hermes.RequestHandlerRegistry;
 import edu.kit.aifb.dbe.hermes.Sender;

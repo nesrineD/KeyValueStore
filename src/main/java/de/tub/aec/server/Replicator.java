@@ -1,12 +1,12 @@
-package de.tuberlin.ise.aec.group3;
+package de.tub.aec.server;
 
 import java.util.HashMap;
 import java.util.HashSet;
 
-import de.tuberlin.ise.aec.group3.callables.AsyncTargetCallable;
-import de.tuberlin.ise.aec.group3.callables.QuorumTargetCallable;
-import de.tuberlin.ise.aec.group3.callables.SyncTargetCallable;
-import de.tuberlin.ise.aec.group3.exceptions.SynchronousReplicationFailedException;
+import de.tub.aec.server.callables.AsyncTargetCallable;
+import de.tub.aec.server.callables.QuorumTargetCallable;
+import de.tub.aec.server.callables.SyncTargetCallable;
+import de.tub.aec.server.exceptions.SynchronousReplicationFailedException;
 import edu.kit.aifb.dbe.hermes.Request;
 import edu.kit.aifb.dbe.hermes.Response;
 import edu.kit.aifb.dbe.hermes.Sender;

@@ -1,12 +1,12 @@
-package de.tuberlin.ise.aec.group3;
+package de.tub.aec.server;
 
 import java.util.HashMap;
 
 import org.apache.log4j.Logger;
 
-import de.tuberlin.ise.aec.group3.exceptions.KeyAlreadyExistsException;
-import de.tuberlin.ise.aec.group3.exceptions.KeyNotFoundException;
-import de.tuberlin.ise.aec.group3.exceptions.SameValueException;
+import de.tub.aec.server.exceptions.KeyAlreadyExistsException;
+import de.tub.aec.server.exceptions.KeyNotFoundException;
+import de.tub.aec.server.exceptions.SameValueException;
 import edu.kit.aifb.dbe.hermes.Request;
 import edu.kit.aifb.dbe.hermes.Response;
 import edu.kit.aifb.dbe.hermes.Sender;

@@ -1,13 +1,13 @@
-package de.tuberlin.ise.aec.group3.handlers;
+package de.tub.aec.server.handler;
 
 import java.util.HashMap;
 import java.util.HashSet;
 
-import de.tuberlin.ise.aec.group3.KeyValueStore;
-import de.tuberlin.ise.aec.group3.ReplicationTarget;
-import de.tuberlin.ise.aec.group3.Replicator;
-import de.tuberlin.ise.aec.group3.exceptions.KeyNotFoundException;
-import de.tuberlin.ise.aec.group3.exceptions.SynchronousReplicationFailedException;
+import de.tub.aec.server.KeyValueStore;
+import de.tub.aec.server.ReplicationTarget;
+import de.tub.aec.server.Replicator;
+import de.tub.aec.server.exceptions.KeyNotFoundException;
+import de.tub.aec.server.exceptions.SynchronousReplicationFailedException;
 import edu.kit.aifb.dbe.hermes.IRequestHandler;
 import edu.kit.aifb.dbe.hermes.Request;
 import edu.kit.aifb.dbe.hermes.Response;
