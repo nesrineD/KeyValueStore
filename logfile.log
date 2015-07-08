@@ -1,0 +1,782 @@
+DEBUG main org.apache.log4j.Logger - ID: nodeA Host: localhost Port: 2000
+DEBUG main org.apache.log4j.Logger - ID: nodeB Host: localhost Port: 3000
+DEBUG main org.apache.log4j.Logger - ID: nodeC Host: localhost Port: 4000
+DEBUG main org.apache.log4j.Logger - Path Element #0 - StartPath: nodeA
+DEBUG main org.apache.log4j.Logger - Link Element #0 - Source: nodeA
+DEBUG main org.apache.log4j.Logger - Type: sync for Link Element #0 and StartPath nodeA -> Target: nodeB
+DEBUG main org.apache.log4j.Logger - Link Element #1 - Source: nodeB
+DEBUG main org.apache.log4j.Logger - Sync: Adding to set
+DEBUG main org.apache.log4j.Logger - Adding to Map
+DEBUG main org.apache.log4j.Logger - Path Element #1 - StartPath: nodeB
+DEBUG main org.apache.log4j.Logger - Link Element #0 - Source: nodeB
+DEBUG main org.apache.log4j.Logger - Path Element #2 - StartPath: nodeC
+DEBUG main org.apache.log4j.Logger - Link Element #0 - Source: nodeC
+DEBUG main org.apache.log4j.Logger - Link Element #1 - Source: nodeC
+INFO main org.apache.log4j.Logger - ----------------------
+INFO main edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Registered handler of type CreateHandler for target create
+INFO main edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Registered handler of type ReadHandler for target read
+INFO main edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Registered handler of type UpdateHandler for target update
+INFO main edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Registered handler of type DeleteHandler for target delete
+INFO main edu.kit.aifb.dbe.hermes.Receiver - Receiver created at port 2000
+INFO Thread-1 edu.kit.aifb.dbe.hermes.Receiver - Receiver is now running.
+INFO Thread-1 edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Known handlers:
+	ReadHandler(target: read)
+	CreateHandler(target: create)
+	UpdateHandler(target: update)
+	DeleteHandler(target: delete)
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - ThreadScaleManager is now running.
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Started 3 RequestHandlerThreads.
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Started 3 NetworkIOHandlerThreads.
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-3 de.tuberlin.ise.aec.group3.KeyValueStore - the write time is1436353490466
+INFO Thread-3 de.tuberlin.ise.aec.group3.KeyValueStore - the response is to AResponse message
+Response code: Failure
+Text response: A timeout or an error during processing has occurred: null
+Body:message sent
+INFO Thread-3 de.tuberlin.ise.aec.group3.KeyValueStore - the write time is1436353491499
+INFO Thread-3 de.tuberlin.ise.aec.group3.KeyValueStore - the response is to AResponse message
+Response code: Success
+Text response: the write time is :
+Body:
+	Item 1: 1.436353491499E12message sent
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+DEBUG main org.apache.log4j.Logger - ID: nodeA Host: localhost Port: 2000
+DEBUG main org.apache.log4j.Logger - ID: nodeB Host: localhost Port: 3000
+DEBUG main org.apache.log4j.Logger - ID: nodeC Host: localhost Port: 4000
+DEBUG main org.apache.log4j.Logger - Path Element #0 - StartPath: nodeA
+DEBUG main org.apache.log4j.Logger - Link Element #0 - Source: nodeA
+DEBUG main org.apache.log4j.Logger - Type: sync for Link Element #0 and StartPath nodeA -> Target: nodeB
+DEBUG main org.apache.log4j.Logger - Link Element #1 - Source: nodeB
+DEBUG main org.apache.log4j.Logger - Sync: Adding to set
+DEBUG main org.apache.log4j.Logger - Adding to Map
+DEBUG main org.apache.log4j.Logger - Path Element #1 - StartPath: nodeB
+DEBUG main org.apache.log4j.Logger - Link Element #0 - Source: nodeB
+DEBUG main org.apache.log4j.Logger - Path Element #2 - StartPath: nodeC
+DEBUG main org.apache.log4j.Logger - Link Element #0 - Source: nodeC
+DEBUG main org.apache.log4j.Logger - Link Element #1 - Source: nodeC
+INFO main org.apache.log4j.Logger - ----------------------
+INFO main edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Registered handler of type CreateHandler for target create
+INFO main edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Registered handler of type ReadHandler for target read
+INFO main edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Registered handler of type UpdateHandler for target update
+INFO main edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Registered handler of type DeleteHandler for target delete
+INFO main edu.kit.aifb.dbe.hermes.Receiver - Receiver created at port 2000
+INFO Thread-1 edu.kit.aifb.dbe.hermes.Receiver - Receiver is now running.
+INFO Thread-1 edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Known handlers:
+	ReadHandler(target: read)
+	CreateHandler(target: create)
+	UpdateHandler(target: update)
+	DeleteHandler(target: delete)
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - ThreadScaleManager is now running.
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Started 3 RequestHandlerThreads.
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Started 3 NetworkIOHandlerThreads.
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-3 de.tuberlin.ise.aec.group3.KeyValueStore - the write time is1436354889996
+INFO Thread-3 de.tuberlin.ise.aec.group3.KeyValueStore - the response is to AResponse message
+Response code: Failure
+Text response: A timeout or an error during processing has occurred: null
+Body:message sent
+ERROR pool-2-thread-1 edu.kit.aifb.dbe.hermes.Sender - Could not start session.
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at edu.kit.aifb.dbe.hermes.Sender.startSession(Sender.java:112)
+	at edu.kit.aifb.dbe.hermes.Sender.access$0(Sender.java:94)
+	at edu.kit.aifb.dbe.hermes.Sender$SenderCallable.call(Sender.java:311)
+	at edu.kit.aifb.dbe.hermes.Sender$SenderCallable.call(Sender.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+ERROR pool-2-thread-1 edu.kit.aifb.dbe.hermes.Sender - Could not start session.
+INFO Thread-3 de.tuberlin.ise.aec.group3.KeyValueStore - the write time is1436354891231
+INFO Thread-3 de.tuberlin.ise.aec.group3.KeyValueStore - the response is to AResponse message
+Response code: Failure
+Text response: A timeout or an error during processing has occurred: null
+Body:message sent
+ERROR pool-4-thread-1 edu.kit.aifb.dbe.hermes.Sender - Could not start session.
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at edu.kit.aifb.dbe.hermes.Sender.startSession(Sender.java:112)
+	at edu.kit.aifb.dbe.hermes.Sender.access$0(Sender.java:94)
+	at edu.kit.aifb.dbe.hermes.Sender$SenderCallable.call(Sender.java:311)
+	at edu.kit.aifb.dbe.hermes.Sender$SenderCallable.call(Sender.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+ERROR pool-4-thread-1 edu.kit.aifb.dbe.hermes.Sender - Could not start session.
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+DEBUG main org.apache.log4j.Logger - ID: nodeA Host: localhost Port: 2000
+DEBUG main org.apache.log4j.Logger - ID: nodeB Host: localhost Port: 3000
+DEBUG main org.apache.log4j.Logger - ID: nodeC Host: localhost Port: 4000
+DEBUG main org.apache.log4j.Logger - Path Element #0 - StartPath: nodeA
+DEBUG main org.apache.log4j.Logger - Link Element #0 - Source: nodeA
+DEBUG main org.apache.log4j.Logger - Type: sync for Link Element #0 and StartPath nodeA -> Target: nodeB
+DEBUG main org.apache.log4j.Logger - Link Element #1 - Source: nodeB
+DEBUG main org.apache.log4j.Logger - Sync: Adding to set
+DEBUG main org.apache.log4j.Logger - Adding to Map
+DEBUG main org.apache.log4j.Logger - Path Element #1 - StartPath: nodeB
+DEBUG main org.apache.log4j.Logger - Link Element #0 - Source: nodeB
+DEBUG main org.apache.log4j.Logger - Path Element #2 - StartPath: nodeC
+DEBUG main org.apache.log4j.Logger - Link Element #0 - Source: nodeC
+DEBUG main org.apache.log4j.Logger - Link Element #1 - Source: nodeC
+INFO main org.apache.log4j.Logger - ----------------------
+INFO main edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Registered handler of type CreateHandler for target create
+INFO main edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Registered handler of type ReadHandler for target read
+INFO main edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Registered handler of type UpdateHandler for target update
+INFO main edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Registered handler of type DeleteHandler for target delete
+INFO main edu.kit.aifb.dbe.hermes.Receiver - Receiver created at port 2000
+INFO Thread-1 edu.kit.aifb.dbe.hermes.Receiver - Receiver is now running.
+INFO Thread-1 edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Known handlers:
+	ReadHandler(target: read)
+	CreateHandler(target: create)
+	UpdateHandler(target: update)
+	DeleteHandler(target: delete)
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - ThreadScaleManager is now running.
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Started 3 RequestHandlerThreads.
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Started 3 NetworkIOHandlerThreads.
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-3 de.tuberlin.ise.aec.group3.KeyValueStore - the write time is1436355793944
+ERROR pool-2-thread-1 edu.kit.aifb.dbe.hermes.Sender - Could not start session.
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at edu.kit.aifb.dbe.hermes.Sender.startSession(Sender.java:112)
+	at edu.kit.aifb.dbe.hermes.Sender.access$0(Sender.java:94)
+	at edu.kit.aifb.dbe.hermes.Sender$SenderCallable.call(Sender.java:311)
+	at edu.kit.aifb.dbe.hermes.Sender$SenderCallable.call(Sender.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+ERROR pool-2-thread-1 edu.kit.aifb.dbe.hermes.Sender - Could not start session.
+INFO Thread-3 de.tuberlin.ise.aec.group3.KeyValueStore - the response is to AResponse message
+Response code: Failure
+Text response: Could not start session.
+Body:message sent
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
+INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Now active: 
+- 1 out of 3 NetworkHandlerThreads
+- 1 out of 3 RequestHandlerThreads
+Queue status:
+- 0 priority requests waiting
+- 0 normal requests waiting
+- 0 responses waiting
+- 0 clients waiting
+- 0 clients unread
