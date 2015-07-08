@@ -93,7 +93,7 @@ public class KeyValueStore {
 	 */
 	private static Response sendMessage(String host, int port, Request req) {
 		Sender s = new Sender(host, port);
-		return s.sendMessage(req, 100000);
+		return s.sendMessage(req, 1000);
 	}
 	
 	/**
@@ -115,7 +115,7 @@ public class KeyValueStore {
 				// send the time of the write to the client
 				Request req = new Request("writeTime", "nodeA");
 				req.addItem(writeTime);
-				Response resp = sendMessage("localhost", 6000, req);
+				Response resp = sendMessage("89.15.238.206", 18208, req);
 				logger.info("the response is to A" + resp + "message sent");
 				
 			} else {
