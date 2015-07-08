@@ -76,12 +76,12 @@ public class Server {
 		reg.registerHandler("delete", new DeleteHandler(senders, replicationTargets));
 
 		/** TODO necessary? */
-		 if (acceptThreads < this.MAX_THREADS && acceptThreads > 1 &&
-		 processThreads < this.MAX_THREADS && processThreads > 1) {
-		 this.receiver = new Receiver(port, acceptThreads, processThreads);
-		} else {
+//		 if (acceptThreads < this.MAX_THREADS && acceptThreads > 1 &&
+//		 processThreads < this.MAX_THREADS && processThreads > 1) {
+//		 this.receiver = new Receiver(port, acceptThreads, processThreads);
+//		} else {
 		receiver = new Receiver(port, 5, 5);
-		}
+		//}
 
 		/** Server starts to accept requests */
 		receiver.start();
