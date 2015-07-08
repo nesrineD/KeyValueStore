@@ -835,3 +835,10 @@ INFO Thread-1 edu.kit.aifb.dbe.hermes.RequestHandlerRegistry - Known handlers:
 INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - ThreadScaleManager is now running.
 INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Started 3 RequestHandlerThreads.
 INFO Thread-2 edu.kit.aifb.dbe.hermes.Receiver - Started 3 NetworkIOHandlerThreads.
+DEBUG main org.apache.log4j.Logger - ID: nodeA Host: 52.18.103.8 Port: 2000
+DEBUG main org.apache.log4j.Logger - ID: nodeB Host: 54.210.67.217 Port: 3000
+DEBUG main org.apache.log4j.Logger - ID: nodeC Host: 52.10.128.10 Port: 4000
+DEBUG main org.apache.log4j.Logger - ID: nodeD Host: 54.169.107.229 Port: 5000
+DEBUG main org.apache.log4j.Logger - ID: nodeA Host: 52.18.103.8 Port: 2000
+DEBUG main org.apache.log4j.Logger - ID: nodeB Host: 54.210.67.217 Port: 3000
+DEBUG main org.apache.log4j.Logger - ID: nodeC Host: 52.10.128.10 Port: 4000
