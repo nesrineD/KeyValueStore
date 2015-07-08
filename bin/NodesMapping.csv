@@ -1,3 +1,4 @@
-nodeA,localhost,2000
-nodeB,localhost,3000
-nodeC,localhost,4000
+nodeA,52.18.103.8,2000
+nodeB,54.210.67.217,3000
+nodeC,52.10.128.10,4000
+nodeD,54.169.107.229,5000
