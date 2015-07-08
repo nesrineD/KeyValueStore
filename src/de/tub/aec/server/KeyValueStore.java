@@ -115,7 +115,7 @@ public class KeyValueStore {
 				// send the time of the write to the client
 				Request req = new Request("writeTime", "nodeA");
 				req.addItem(writeTime);
-				Response resp = sendMessage("89.15.238.100", 6000, req);
+				Response resp = sendMessage("52.18.96.133", 6000, req);
 				logger.info("the response is to A" + resp + "message sent");
 				
 			} else {
