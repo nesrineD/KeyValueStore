@@ -113,10 +113,10 @@ public class KeyValueStore {
 				writeTime = System.currentTimeMillis();
 				logger.info("the write time is" + writeTime);
 				// send the time of the write to the client
-				Request req = new Request("writeTime", "nodeB");
+				Request req = new Request("writeTime", "nodeC");
 				req.addItem(writeTime);
 				Response resp = sendMessage("wlan-141-23-84-139.tubit.tu-berlin.de", 53059, req);
-				logger.info("the response is to A" + resp + "message sent");
+				logger.info("the response is to C" + resp + "message sent");
 				
 			} else {
 				throw new SameValueException("Value has not changed.");
