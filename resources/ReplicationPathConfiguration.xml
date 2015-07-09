@@ -1,7 +1,30 @@
 <replicationpaths>
 	<path start="nodeA">
-		<link src="nodeA" type="async" target="nodeB"/>
-		<link src="nodeB" type="async" target="nodeC"/>
-		<link src="nodeC" type="async" target="nodeD"/>
+		<link src="nodeA" type="quorum" qsize="2">
+			<qparticipant name="nodeB"/>
+			<qparticipant name="nodeC"/>
+			<qparticipant name="nodeD"/>
+		</link>	
+	</path>
+	<path start="nodeB">
+		<link src="nodeB" type="quorum" qsize="2">
+			<qparticipant name="nodeA"/>
+			<qparticipant name="nodeC"/>
+			<qparticipant name="nodeD"/>
+		</link>	
+	</path>
+	<path start="nodeC">
+		<link src="nodeC" type="quorum" qsize="2">
+			<qparticipant name="nodeA"/>
+			<qparticipant name="nodeB"/>
+			<qparticipant name="nodeD"/>
+		</link>	
+	</path>
+	<path start="nodeD">
+		<link src="nodeD" type="quorum" qsize="2">
+			<qparticipant name="nodeA"/>
+			<qparticipant name="nodeB"/>
+			<qparticipant name="nodeC"/>
+		</link>	
 	</path>
 </replicationpaths>
