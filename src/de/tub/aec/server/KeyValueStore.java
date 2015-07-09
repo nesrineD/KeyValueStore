@@ -84,7 +84,6 @@ public class KeyValueStore {
 			throw new KeyNotFoundException("Key does not exist in the store.");
 		}
 	}
-
 	/**
 	 * @param host ip address to which the client is reachable
 	 * @param port port number of the client
@@ -93,8 +92,9 @@ public class KeyValueStore {
 	 */
 	private static Response sendMessage(String host, int port, Request req) {
 		Sender s = new Sender(host, port);
-		return s.sendMessage(req, 10000000);
+		return s.sendMessage(req, 10000);
 	}
+	
 	
 	/**
 	 * Update an old value with a new one.
@@ -110,12 +110,14 @@ public class KeyValueStore {
 		if (store.containsKey(key)) {
 			if (!store.get(key).equals(value)) {
 				store.replace(key, value);
+				// store the time when the replica is written and send it to he client
 				writeTime = System.currentTimeMillis();
 				logger.info("the write time is" + writeTime);
 	           // send the time of the write to the client
+				// each node sends its nodeId in the second argument
 				Request req = new Request("writeTime", "nodeA");
 				req.addItem(writeTime);
-				Response resp = sendMessage("89.204.135.19", 6000, req);
+				Response resp = sendMessage("82.113.121.59", 7000, req);
 				logger.info("the response is to A" + resp + "message sent");
 				
 			} else {
