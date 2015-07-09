@@ -93,7 +93,7 @@ public class KeyValueStore {
 	 */
 	private static Response sendMessage(String host, int port, Request req) {
 		Sender s = new Sender(host, port);
-		return s.sendMessage(req, 1000000);
+		return s.sendMessage(req, 10000000);
 	}
 	
 	/**
